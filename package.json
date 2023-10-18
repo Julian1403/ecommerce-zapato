@@ -2,7 +2,7 @@
   "name": "ecommerce-zapato",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Julian1403.github.io/ecommerce-zapato",
+  "homepage": "http://julian1403.github.io/ecommerce-zapato",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
