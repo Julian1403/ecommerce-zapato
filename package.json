@@ -47,16 +47,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "author": "Julian",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Julian1403/e-commerce-zapatos.git"
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "bugs": {
-    "url": "https://github.com/Julian1403/e-commerce-zapatos/issues"
-  },
-  "main": "index.js"
+  }
 }
