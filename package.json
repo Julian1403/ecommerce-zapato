@@ -1,5 +1,5 @@
 {
-  "name": "front",
+  "name": "ecommerce-zapato",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://julian1403.github.io",
@@ -45,10 +45,16 @@
       "last 1 safari version"
     ]
   },
-  "author": "Julian ",
+  "author": "Julian",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Julian1403/e-commerce-zapatos"
-  }
+    "url": "git+https://github.com/Julian1403/e-commerce-zapatos.git"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "bugs": {
+    "url": "https://github.com/Julian1403/e-commerce-zapatos/issues"
+  },
+  "main": "index.js",
+  "devDependencies": {}
 }
