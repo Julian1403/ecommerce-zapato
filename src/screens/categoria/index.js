@@ -17,7 +17,7 @@ function Categoria() {
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item active">
-              <Link to={'/'}>
+              <Link to={'/ecommerce-zapato'}>
                   Home
                 </Link>
               </li>

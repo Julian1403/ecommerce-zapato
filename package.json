@@ -2,7 +2,7 @@
   "name": "ecommerce-zapato",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Julian1403.github.io",
+  "homepage": "https://julian1403.github.io/ecommerce-zapato",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
@@ -19,6 +19,7 @@
     "react-scripts": "5.0.0",
     "react-slick": "^0.28.1",
     "slick-carousel": "^1.8.1",
+    "gh-pages": "^6.0.0",
     "web-vitals": "^2.1.2"
   },
   "scripts": {
@@ -46,8 +47,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^6.0.0"
   }
 }
