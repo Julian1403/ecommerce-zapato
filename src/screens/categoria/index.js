@@ -1,10 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap/";
 import productos from "../../data/productos.json";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
-import './categoria.css';
-import {Link} from 'react-router-dom';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { Link, Outlet } from "react-router-dom"; // Importa Outlet para rutas secundarias
+import "./categoria.css";
 
 function Categoria() {
   const dataProducto = productos;
@@ -15,14 +15,12 @@ function Categoria() {
       <Row>
         <Col>
           <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item active">
-              <Link to={'/ecommerce-zapato'}>
-                  Home
-                </Link>
+            <ol className="breadcrumb">
+              <li className="breadcrumb-item active">
+                <Link to={"/ecommerce-zapato"}>Home</Link>
               </li>
-              <li class="breadcrumb-item active">Categorias</li>
-              <li class="breadcrumb-item active" aria-current="page">
+              <li className="breadcrumb-item active">Categorias</li>
+              <li className="breadcrumb-item active" aria-current="page">
                 Calzado
               </li>
             </ol>
@@ -39,68 +37,56 @@ function Categoria() {
               </Col>
             </Row>
             <div className="border mt-3 p-2">
-            <Row className="mt-2 p-1">
-             
-             <p>
-               <b>TALLA</b>
-             </p>
-             <div className="tallasbox">
-               {tallas.map((data, index) => {
-                 return (
-                   <button
-                     type="button"
-                     key={index}
-                     className="btn btn-secondary tallasitems btn-xs m-1"
-                   >
-                     {data}
-                   </button>
-                 );
-               })}
-             </div>
-
-         </Row>
-         <Row className="mt-2 p-1">
-            <p>
-               <b>PRECIO</b>
-             </p>
-             <p>
-                 {"$150000 - $300000 (10)"}<br/>
-                 {"$300000 - $450000 (24)"}<br/>
-             </p>
-         </Row>
-         <Row className="mt-2 p-1">
-            <p>
-               <b>MATERIAL</b>
-             </p>
-             <p>
-                 {"CUERO (18)"}<br/>
-                 {"NUBUK (8)"}<br/>
-             </p>
-         </Row>
-         <Row className="mt-2 p-1">
-            <p>
-               <b>COLOR</b>
-             </p>
-             <p>
-                 {"NEGRO (12)"}<br/>
-                 {"CAFE (12)"}<br/>
-                 {"AZUL (12)"}<br/>
-                 {"ORO (12)"}<br/>
-             </p>
-         </Row>
-         <Row className="mt-2 p-1">
-            <p>
-               <b>TECNOLOGÍA</b>
-             </p>
-             <p>
-                 {"HPO2Flex (5)"}<br/>
-                 {"BioBevel (1)"}<br/>
-                 {"flexGroove (3)"}<br/>
-             </p>
-         </Row>
-
+              <Row className="mt-2 p-1">
+                <p>
+                  <b>TALLA</b>
+                </p>
+                <div className="tallasbox">
+                  {tallas.map((data, index) => {
+                    return (
+                      <button
+                        type="button"
+                        key={index}
+                        className="btn btn-secondary tallasitems btn-xs m-1"
+                      >
+                        {data}
+                      </button>
+                    );
+                  })}
+                </div>
+              </Row>
+              <Row className="mt-2 p-1">
+                <p>
+                  <b>PRECIO</b>
+                </p>
+                <p>{"$150000 - $300000 (10)"}</p>
+                <p>{"$300000 - $450000 (24)"}</p>
+              </Row>
+              <Row className="mt-2 p-1">
+                <p>
+                  <b>MATERIAL</b>
+                </p>
+                <p>{"CUERO (18)"}</p>
+                <p>{"NUBUK (8)"}</p>
+              </Row>
+              <Row className="mt-2 p-1">
+                <p>
+                  <b>COLOR</b>
+                </p>
+                <p>{"NEGRO (12)"}</p>
+                <p>{"CAFE (12)"}</p>
+                <p>{"AZUL (12)"}</p>
+                <p>{"ORO (12)"}</p>
+              </Row>
+              <Row className="mt-2 p-1">
+                <p>
+                  <b>TECNOLOGÍA</b>
+                </p>
+                <p>{"HPO2Flex (5)"}</p>
+                <p>{"BioBevel (1)"}</p>
+                <p>{"flexGroove (3)"}</p>
+              </Row>
             </div>
-            
           </Container>
         </Col>
         <Col lg={9}>
@@ -111,13 +97,13 @@ function Categoria() {
                 <Col className="mb-2" key={index} lg={4}>
                   <div className="card no-radius card-product no-borders-bottom">
                     <div className="card-favorite">
-                    <button type="button" className="btn btn-default mx-4">
-                  <FontAwesomeIcon icon={faHeart} color="gray" size="lg"/>
-                  </button>
+                      <button type="button" className="btn btn-default mx-4">
+                        <FontAwesomeIcon icon={faHeart} color="gray" size="lg" />
+                      </button>
                     </div>
                     <div className="card-img card-img-box">
-                      <Link to={'/producto/'+data.id}>
-                      <img className="card-img-element" src={photo} alt="e-commerce" />
+                      <Link to={`/producto/${data.id}`}> {/* Utiliza rutas relativas */}
+                        <img className="card-img-element" src={photo} alt="e-commerce" />
                       </Link>
                     </div>
                     <div className="card-title">
@@ -135,7 +121,11 @@ function Categoria() {
           </Row>
         </Col>
       </Row>
+      {/* Outlet para rutas secundarias */}
+      <Outlet />
     </Container>
   );
 }
+
 export default Categoria;
+

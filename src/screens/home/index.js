@@ -63,7 +63,7 @@ function Home() {
         <Container className="my-5">
           <Row>
             <Col lg={4}>
-            <Link to={'/categoria'}>
+            <Link to={'/ecommerce-zapato/categoria'}>
               <div className="card">
                 <img className="card-img" src={mujer} alt="e-commerce"/>
                 <div className="card-img-overlay text-white d-flex flex-column justify-content-center">
@@ -73,7 +73,7 @@ function Home() {
               </Link>
             </Col>
             <Col lg={4}>
-            <Link to={'/categoria'}>
+            <Link to={'/ecommerce-zapato/categoria'}>
 
               <div className="card">
                 <img className="card-img" src={hombre} alt="e-commerce" />
@@ -84,7 +84,7 @@ function Home() {
               </Link>
             </Col>
             <Col lg={4}>
-            <Link to={'/categoria'}>
+            <Link to={'/ecommerce-zapato/categoria'}>
             <div className="card">
                 <img className="card-img" src={accesorios} alt="e-commerce" />
                 <div className="card-img-overlay text-white d-flex flex-column justify-content-center">
@@ -98,7 +98,7 @@ function Home() {
           </Row>
           <Row className="mt-3">
             <Col lg={12}>
-              <Link to={'/categoria'}>
+              <Link to={'/ecommerce-zapato/categoria'}>
               <div className="card">
                 <img className="card-img" src={banner} alt="e-commerce" />
                 <div className="card-img-overlay text-white d-flex flex-column justify-content-center">

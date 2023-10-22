@@ -183,7 +183,7 @@ function Producto() {
             <Col className="mb-2" key={index} lg={3}>
               <div className="card card-product no-borders">
                 <div className="card-img card-img-box">
-                  <Link to={'/producto/'+data.id}>
+                  <Link to={'/ecommerce-zapato/producto/'+data.id}>
                   <img
                     className="card-img-element"
                     src={photo}
@@ -226,7 +226,7 @@ function Producto() {
               
               <div className="card no-radius card-product no-borders-bottom">
                 <div className="card-img card-img-box">
-                  <Link to={'/producto/'+data.id}>
+                  <Link to={'/ecommerce-zapato/producto/'+data.id}>
                   <img
                     className="card-img-element"
                     src={photo}

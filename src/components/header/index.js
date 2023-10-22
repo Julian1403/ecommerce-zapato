@@ -27,10 +27,10 @@ return(
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
-        <Link className="nav-link" to={'/categoria'}>
+        <Link className="nav-link" to={'/ecommerce-zapato/categoria'}>
         HOMBRE
         </Link>
-        <Link className="nav-link" to={'/categoria'}>
+        <Link className="nav-link" to={'/ecommerce-zapato/categoria'}>
         MUJER
         </Link>
         <Link className="nav-link" to={''}>

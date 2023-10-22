@@ -11,11 +11,11 @@ import Categoria from './screens/categoria';
 function App() {
   
   const mainRoutes = {
-    path: '/',
+    path: '/ecommerce-zapato/',
     element: <DefaultLayout/>,
     children: [
      {
-      path: '/', 
+      path: '', 
      element: <Home/> 
     },
      {
