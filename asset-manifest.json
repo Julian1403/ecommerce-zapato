@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ecommerce-zapato/static/css/main.213be2de.css",
-    "main.js": "/ecommerce-zapato/static/js/main.007b6dfe.js",
+    "main.js": "/ecommerce-zapato/static/js/main.c9e97eeb.js",
     "static/js/787.c7464ef3.chunk.js": "/ecommerce-zapato/static/js/787.c7464ef3.chunk.js",
     "static/media/banner.jpg": "/ecommerce-zapato/static/media/banner.0e44388b73600ab32373.jpg",
     "static/media/home-banner.png": "/ecommerce-zapato/static/media/home-banner.660df7a73b68d2844f76.png",
@@ -37,11 +37,11 @@
     "index.html": "/ecommerce-zapato/index.html",
     "static/media/angle-right-solid.svg": "/ecommerce-zapato/static/media/angle-right-solid.cd2a56f425767e222ad4.svg",
     "main.213be2de.css.map": "/ecommerce-zapato/static/css/main.213be2de.css.map",
-    "main.007b6dfe.js.map": "/ecommerce-zapato/static/js/main.007b6dfe.js.map",
+    "main.c9e97eeb.js.map": "/ecommerce-zapato/static/js/main.c9e97eeb.js.map",
     "787.c7464ef3.chunk.js.map": "/ecommerce-zapato/static/js/787.c7464ef3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.213be2de.css",
-    "static/js/main.007b6dfe.js"
+    "static/js/main.c9e97eeb.js"
   ]
 }
